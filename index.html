@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Register</title>
+ <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+ <script type="text/javascript">
+ 	function salam()
+ 	{
+ 		var str = document.getElementById("text1").value;
+ 		alert("Value inside the text box is " + str)
+
+ 		const url = "http://vm707.mocklab.io/todo-items";
+ 		$.getJSON(url, function(data) {
+ 			console.log(data);
+ 		})
+ 	}
+ </script>
+ </head>
+ <body>
+ <h1>Get directions to the city</h1>
+ <p>Please enter the city</p>
+ <input id="text1" placeholder="Enter a city">
+ <br>
+ <button id="btn1" onclick="salam()"> Click me </button>
+ </body>
+</html>
+
+	
